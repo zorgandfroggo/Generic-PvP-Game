@@ -1,8 +1,26 @@
-players will be able to run
-if button is held down player will start running
-then running will stop when button is let go
+--players will be able to run
+--if button is held down player will start running
+--then running will stop when button is let go
 --might change to toggable setting
-the button will be shift
+--the button will be shift
 --unless customizable menu is added
 
 --additional notes
+local player = game:GetService("Players").LocalPlayer
+local Character = player.Character or player.CharacterAdded:Wait()
+local Humanoid = Character:WaitForChild('Humanoid')
+local uis = game:GetService("UserInputService")
+local rs = game:GetService("ReplicatedStorage")
+local re = rs:WaitForChild("RunRemoteEvent")
+--Properties
+Character:FindFirstChild("WalkSpeed")
+local keybind = Enum.KeyCode.LeftShift--might have to get rid of
+
+uis.InputBegan:Connect(function(input, gameProcessedEvent)
+	if input.UserInputType == Enum.UserInputType.Keyboard then
+		if input.KeyCode == Enum.KeyCode.LeftShift then
+			Character:FindFirstChild("WalkSpeed")
+			local WalkSpeed = 20
+		end
+	end
+end) 
