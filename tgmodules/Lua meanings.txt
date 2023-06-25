@@ -1,0 +1,19 @@
+variable = stores a value
+object stores script.Parent
+parent is whatever the script is inside of
+Part.Parent used to parent
+Part.(porperty) to adjust properties
+
+local = the local variable
+
+instance = any object in roblox studio
+Instance.new creates new instance
+use parenthases in quotes to name new part
+
+string = a line of text
+
+nil = nothing/no value
+
+Brick.Color = color of object
+Enum = root access point (ex. Materials)
+vector3 = 3 manipulative values
