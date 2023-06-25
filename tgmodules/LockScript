@@ -1,1 +1,7 @@
+create lock-on feature for players to use
+if lock-on occurs player camera will smooth pan over shoulder and lock onto opponent
+when lock-on occurs cursor will dissapear to avoid clutter
+when locked on player dies the camera smooth moves back to original placement
+lock on is a toggable feature
 
+--additional notes
